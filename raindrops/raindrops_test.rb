@@ -4,11 +4,12 @@ require_relative 'raindrops'
 class RaindropsTest < MiniTest::Unit::TestCase
 
   def test_1
+    skip
     assert_equal "1", Raindrops.convert(1)
   end
 
   def test_3
-    skip
+
     assert_equal "Pling", Raindrops.convert(3)
   end
 
