@@ -1,31 +1,10 @@
 class Raindrops
-  def self.convert(num)
-    number = num.to_i
-    string = ''
-
-    if number % 3 == 0
-
-      string += 'Pling'
-    end
-
-    if number % 5 ==0
-      string +='Plang'
-    end
-
-    if number % 7 ==0
-      string +='Plong'
-    end
-
-    if number %3 != 0 && number %5 != 0 && number %7 != 0
-
-      string = number.to_s
-
-    end
-
-    string
-
+ def self.convert(num)
+    a = []
+    a << "Pling" if num % 3 == 0
+    a << "Plang" if num % 5 == 0
+    a << "Plong" if num % 7 == 0
+    a << num if a.empty?
+    a.join
   end
 end
-
-
-
